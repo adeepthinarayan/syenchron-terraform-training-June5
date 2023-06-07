@@ -1,7 +1,7 @@
 resource "aws_s3_bucket" "thinknyx_s3" {
   bucket = "thinknyx-day3-deepthi"
   lifecycle {
-    prevent_destroy = false
+    prevent_destroy = true
   }
   force_destroy = true
 }
